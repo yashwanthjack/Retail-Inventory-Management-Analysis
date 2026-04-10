@@ -7,8 +7,9 @@ This project provides a comprehensive analysis of retail inventory data to help 
 Efficient inventory management is crucial for retail success. This project analyzes a retail dataset to:
 - Monitor stock levels across different stores.
 - Identify "fast-moving" items based on weekly sales volume.
-- Provide summary statistics for environmental and promotional factors affecting sales.
-
+- Perform Time-Series Trend Analysis to understand purchasing behavior.
+- Extract correlation matrices using multi-dimensional heatmaps.
+- Evaluate existing demand forecasting accuracy against historical performance.
 ## Dataset
 
 The analysis is based on `Retail inventory.csv`, which includes the following features:
@@ -22,10 +23,13 @@ The analysis is based on `Retail inventory.csv`, which includes the following fe
 
 ## Analysis Steps
 
-1. **Data Cleaning**: Handling missing values and ensuring correct data types.
+1. **Data Cleaning & Processing**: Handling missing values, ensuring correct data types, and scaling dates to chronologically valid datetime objects for time-series extraction.
 2. **Exploratory Data Analysis (EDA)**: Visualizing inventory distribution and store performance.
 3. **Speed Metrics**: Ranking products by sales velocity to identify top-performing (fast-moving) items.
 4. **Summary Statistics**: Generating descriptive counts and means for key variables.
+5. **Time-Series Analysis**: Examining temporal fluctuations in overall weekly sales, spotting periodicity or unique spikes.
+6. **Correlation & Relationships**: Presenting a Pearson correlation matrix formatted as a heatmap to observe how factors like temperature, prior promotion spend, and demand metrics act on product sales.
+7. **Demand Forecast Evaluation**: Validating the alignment of historical demand predictability versus actual historical execution scaling.
 
 ## How to Run
 
